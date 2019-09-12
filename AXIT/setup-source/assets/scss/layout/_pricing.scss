@@ -1,0 +1,66 @@
+.pricing {
+    background-color: #f5f5f5;
+    padding: 111px 0 96px;
+
+    .wrapper-pricing {
+        .pricing-intro {
+            text-align: center;
+
+            .pricing-intro {
+                font-size: 25px;
+                font-weight: normal;
+            }
+
+            .line-intro {
+                margin: 30px 0;
+            }
+        }
+
+        .pricing-item {
+            width: 342px;
+            text-align: center;
+
+            .box {
+                .title {
+                    background-color: #333333;
+                    font-weight: bolder;
+                    color: white;
+                    font-size: 18px;
+                    padding: 22px 0;
+                    border-bottom: 1px solid white;
+                }
+
+                .content {
+                    color: white;
+                    background-color: #333333;
+                    padding: 20px 0;
+
+                    span {
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 700;
+                        margin: 5px 0;
+                    }
+
+                    span:nth-child(1) {
+                        font-size: 30px;
+                    }
+
+                    span:nth-child(2) {
+                        font-size: 70px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .detail {
+                background-color: #ff8b38;
+                height: 10px;
+            }
+        }
+    }
+}
+
