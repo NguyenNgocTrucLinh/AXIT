@@ -1,0 +1,49 @@
+.wrapper-customer{
+    background-color: white;
+    padding: 110px 0 100px;
+    .customer-intro{
+        margin-bottom: 50px;
+    }
+    .customer-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .customer-item{
+            width: 275px;
+            .comment{
+                background-color: #f5f5f5;
+                padding: 25px 10px;
+                font-size: 15px;
+                font-style: italic;
+                color: #adaeb0;
+                border-radius:5px;
+                &:hover{
+                    color:  #ff8b38;
+                    cursor:text;
+                }
+            }
+            .arrow{
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 15px solid #f5f5f5;
+                margin-left: 27px;
+                margin-bottom: 10px;
+            }
+            .account{
+                display: flex;
+                align-items: center;
+                .avatar{
+                    margin-right: 15px;
+                }
+                p{
+                    font-size: 15px;
+                    font-style: normal;
+                    color: #adaeb0;
+                }
+            }
+        }
+    }
+
+}

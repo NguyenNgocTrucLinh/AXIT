@@ -1,0 +1,64 @@
+.wrapper-contact{
+    background-color: white;
+    padding:105px 0 80px ;
+    .contact-intro{
+        margin-bottom: 50px;
+    }
+    .form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 13px;
+        .form-left {
+            width: 47%;
+            padding: 20px 0 0;
+            .input-style{
+                input{
+                    padding: 10px 12px;
+                    border: none;
+                    width: 100%;
+                    font-size: 13px;
+                    border-bottom: 1px solid #d6d6d6;
+                    //viền khung
+                    outline: none;
+                    margin-bottom: 30px;
+                    &:focus{
+                        border-bottom: 1px solid #ff8b38;
+                    }
+                }
+                input::-webkit-input-placeholder {
+                    color: #bdbdbd;
+                }
+            }
+        }
+        .form-right{
+            width: 47%;
+            .input-message{
+                textarea{
+                    min-height: 180px;
+                    resize: none;
+                    padding: 8px 12px;
+                    font-size: 13px;
+                    border: none;
+                    width: 100%;
+                    border-bottom: 1px solid #dcdcdc;
+                    background: none;
+                    outline: none;
+                    &:focus{
+                        border-bottom: 1px solid #ff8b38;
+                    }
+                }
+                textarea::-webkit-input-placeholder {
+                    color: #bdbdbd;
+                }
+            }
+        }
+    }
+    button{
+        display: flex;
+        margin: auto;
+        &:focus{
+            outline: none;
+        }
+    }
+}
