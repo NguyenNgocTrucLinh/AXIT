@@ -40,6 +40,16 @@
         font-weight: bolder;
         font-size: 20px;
       }
+      h3{
+        &::before{
+          position: absolute;
+          bottom: 0;
+          content: '';
+          height: 2px;
+          width: 65px;
+          background-color:#ff8b38;
+        }
+      }
       .text{
         color: #c8c9ca;
         font-size: 12px;

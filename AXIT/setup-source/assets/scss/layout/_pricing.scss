@@ -24,7 +24,15 @@
             .pricing-item {
                 width: 342px;
                 text-align: center;
+                &:hover{
+                    .info-active {
+                        display: block;
+                    }
+                    .info-main{
+                        display: none;
+                    }
 
+                }
                 .box {
                     .title {
                         background-color: #333333;
@@ -34,7 +42,6 @@
                         padding: 22px 0;
                         border-bottom: 1px solid white;
                     }
-
                     .content {
                         color: white;
                         background-color: #333333;
@@ -66,6 +73,20 @@
                     height: 5px;
                 }
                 .info-active{
+                    background-color: #ff8b38;
+                    padding: 15px 0;
+                    display: none;
+                    p{
+                        font-size: 13px;
+                        font-weight: normal;
+                        color: white;
+                    }
+                    &:hover{
+
+                    }
+                }
+                .info-main{
+                    display: block;
                     background-color: #ff8b38;
                     padding: 15px 0;
                     p{

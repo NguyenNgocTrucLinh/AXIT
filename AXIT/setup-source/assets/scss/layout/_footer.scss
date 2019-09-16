@@ -6,8 +6,10 @@
         .media-social-footer{
             list-style-type: none;
             margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             li {
-                display: inline-block;
                 i{
                     &:hover{
                         color: #ff8b38;

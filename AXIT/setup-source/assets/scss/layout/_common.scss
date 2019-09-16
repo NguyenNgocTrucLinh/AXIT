@@ -43,13 +43,13 @@ img {
   border: none;
   color: white;
   padding: 15px 25px;
+  border: 2px solid #ff8b38;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -ms-border-radius:5px;
   -o-border-radius: 5px;
   &:hover{
-    border: 2px solid #ff8b38;
     cursor: pointer;
     color:#ff8b38;
     background-color:white;
@@ -71,6 +71,66 @@ img {
   .text{
     font-size: 12px;
     color:#8f9094;
+  }
+}
+h3{
+  &.centerO {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      width: 65px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color:#ff8b38;
+    }
+  }
+  &.centerW {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      width: 65px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color:white;
+    }
+  }
+  &.mlO {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      width: 65px;
+      left: 0;
+      background-color:#ff8b38;
+    }
+  }
+  &.mlW {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      width: 65px;
+      left: 0;
+      background-color:white;
+    }
   }
 }
 
