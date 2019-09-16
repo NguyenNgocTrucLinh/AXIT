@@ -1,7 +1,7 @@
-.sub{
+.wrapper-sub{
   display: flex;
   justify-content: space-between;
-  padding: 110px 165px 117px 115px;
+  padding: 110px 0 117px ;
   .sub-content {
     width: 440px;
     .text{
@@ -18,7 +18,7 @@
     .item{
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: start;
       margin-top: 43px;
       .item-icon{
         max-width: 100%;
