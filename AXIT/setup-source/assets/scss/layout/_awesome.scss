@@ -1,8 +1,14 @@
 .wrapper-awesome{
   padding: 100px 0;
+  @media #{$info-ipad} {
+    padding: 30px 0 0;
+  }
   .awesome-intro{
       text-align: center;
       margin-bottom: 75px;
+      @media #{$info-ipad} {
+        margin-bottom: 35px;
+      }
       .title-intro{
         font-size: 25px;
         font-weight: normal;
@@ -15,6 +21,10 @@
     @include flex;
     justify-content: space-between;
     align-items: center;
+    @media #{$info-ipad} {
+      display: block;
+
+    }
     .item-title{
       font-size: 14px;
       margin-bottom: 25px;
@@ -29,6 +39,10 @@
       text-align: center;
       width: 355px;
       position: relative;
+      @media #{$info-ipad} {
+        margin-bottom: 35px;
+        width: 100%;
+      }
       .circle{
         background-color: transparent;
         width: 70px;
@@ -47,6 +61,9 @@
     }
     .awesome-item:nth-child(2){
       margin: 0 25px;
+      @media #{$info-ipad} {
+        margin: 0 0 50px;
+      }
       .circle{
         padding: 20px 16px;
       }

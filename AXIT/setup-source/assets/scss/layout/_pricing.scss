@@ -1,6 +1,9 @@
 .pricing {
     background-color: #f5f5f5;
     padding: 111px 0 96px;
+    @media #{$info-ipad} {
+        padding: 35px 0 30px;
+    }
     .wrapper-pricing {
         .pricing-intro {
             text-align: center;
@@ -13,19 +16,34 @@
             }
             .text{
                 margin-bottom: 80px;
+                @media #{$info-ipad} {
+                    margin-bottom: 40px;
+                }
             }
         }
         .pricing-list{
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+            @media #{$info-phone-6} {
+                display: block;
+            }
             .pricing-item {
                 width: 342px;
                 text-align: center;
                 @media #{$info-laptop-small} {
-                    width: 190px;
+                    width: 31%;
                 }
-
+                @media #{$info-ipad-pro} {
+                    width: 31%;
+                }
+                @media #{$info-ipad} {
+                    width: 31%;
+                }
+                @media #{$info-phone-6} {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
                 &:hover{
                     .info-active {
                         display: block;

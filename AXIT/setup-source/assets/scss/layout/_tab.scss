@@ -24,6 +24,9 @@
       @media #{$info-ipad-pro}{
         padding:30px 35px;
       }
+      @media #{$info-ipad}{
+        padding:18px 21px;
+      }
       &:hover{
         cursor: pointer;
         background-color: #ff8b38;
@@ -34,6 +37,9 @@
         font-weight: bold;
         @media #{$info-ipad-pro}{
           font-size: 12px;
+        }
+        @media #{$info-ipad}{
+          font-size: 10px;
         }
       }
     }
