@@ -10,6 +10,9 @@
         align-items: center;
         .customer-item{
             width: 275px;
+            @media #{$info-ipad-pro}{
+                width:190px;
+            }
             .comment{
                 background-color: #f5f5f5;
                 padding: 25px 10px;

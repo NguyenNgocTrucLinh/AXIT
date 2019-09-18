@@ -4,9 +4,17 @@
     display: flex;
     justify-content: space-between;
     padding: 77px 0 73px ;
+    @media #{$info-ipad-pro}{
+      display: block;
+      text-align: center;
+    }
     .picture-content {
       width: 472px;
       margin-top: 28px;
+      @media #{$info-ipad-pro}{
+        width: 100%;
+        text-align: left;
+      }
       .text{
         color: #c8c9ca;
         font-size: 12px;

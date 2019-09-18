@@ -21,24 +21,58 @@
           cursor: pointer;
           color: #ff8b38;
         }
+        @media #{$info-ipad-pro} {
+          margin-left: 20px;
+        }
       }
     }
   }
 
-  .header-slider{
+  .slide1{
     width: 100%;
-    background-image: url("../img/background_header.jpg");
+    background-image: url("../img/bg_header1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .slide2{
+    width: 100%;
+    background-image: url("../img/bg_header2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide3{
+    width: 100%;
+    background-image: url("../img/bg_header3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide4{
+    width: 100%;
+    background-image: url("../img/bg_header4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header-slider{
     .wrapper-header-slider{
       padding: 110px 0 140px;
       display: flex;
       justify-content: space-between;
+      @media #{$info-ipad-pro} {
+        padding: 55px 0 70px;
+        display: block;
+      }
       .header-intro{
         color: white;
         width: 415px;
         margin-bottom:35px ;
+        @media #{$info-ipad-pro} {
+          width: 65%;
+          margin-bottom: 50px;
+        }
         .intro-logo{
           margin-bottom: 33px;
         }
@@ -54,6 +88,9 @@
       .form{
         margin-top: 30px;
         width: 360px;
+        @media #{$info-ipad-pro} {
+          width: 100%;
+        }
         .form-header{
           padding: 15px 0;
           background-color: #f5f5f5;
@@ -102,6 +139,9 @@
           &:hover{
             cursor: pointer;
             background-color: black;
+            button{
+              color: #ff8b38;
+            }
           }
           button{
             border: none;
@@ -124,9 +164,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media #{$info-ipad-pro}{
+        display: block;
+      }
       .info{
         margin: 25px 0;
         width: 325px;
+        @media #{$info-ipad-pro}{
+          width: 100%;
+          text-align: center;
+        }
         .title{
           font-weight: bolder;
           font-size: 20px;
@@ -140,6 +187,11 @@
         margin: 30px 0;
         list-style-type: none;
         display: flex;
+        @media #{$info-ipad-pro}{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
         li {
           i{
             &:hover{
@@ -150,12 +202,18 @@
             margin-left: 55px;
             color: #cccccc;
             font-size: 50px;
+            @media #{$info-ipad-pro}{
+              font-size: 30px;
+            }
           }
         }
       }
     }
   }
 }
+
+
+
 
 
 

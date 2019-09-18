@@ -23,6 +23,14 @@ img {
 .wrapper{
   width:1111px;
   margin: auto;
+  @media #{$info-laptop-small}{
+  width:900px;
+  margin: auto;
+}
+  @media #{$info-ipad-pro} {
+    width: 600px;
+    margin: auto;
+  }
 }
 .btn-white{
   background-color: transparent;
@@ -133,4 +141,5 @@ h3{
     }
   }
 }
+
 
