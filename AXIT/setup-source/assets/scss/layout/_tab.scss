@@ -10,6 +10,7 @@
       padding: 50px 50px;
     }
     .tab-menu{
+      z-index: 10;
       @media #{$info-ipad-pro}{
         display: flex;
         justify-content: center;

@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!--  Chèn font google-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -29,13 +29,12 @@
         <div class="wrapper wrapper-header-navbar">
             <img src="assets/img/logo.png" class="logo" alt="">
             <ul class="menu">
-                <li><a href="">Features</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#section1">Features</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Pricing</a></li>
+                <li><a href="#section4">Reviews</a></li>
+                <li><a href="#section5">Contact</a></li>
             </ul>
-
 
     <span class="open-slide" >
       <a href="#" onclick="openSlideMenu()">
@@ -48,11 +47,11 @@
     </span>
             <div id="side-menu" class="side-nav">
                 <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-                <a href="">Features</a>
-                <a href="">About</a>
-                <a href="">Pricing</a>
-                <a href="">Reviews</a>
-                <a href="">Contact</a>
+                <a href="#section1" onclick="closeSlideMenu()">Features</a>
+                <a href="#section2" onclick="closeSlideMenu()">About</a>
+                <a href="#section3" onclick="closeSlideMenu()">Pricing</a>
+                <a href="#section4" onclick="closeSlideMenu()">Reviews</a>
+                <a href="#section5" onclick="closeSlideMenu()">Contact</a>
             </div>
 
 
@@ -61,7 +60,7 @@
 
     <div class="header-slider slide1 mySlides">
         <div class="wrapper wrapper-header-slider">
-            <div class="header-intro animated bounceInLeft">
+            <div class="header-intro wow bounceInLeft">
                 <img src="assets/img/logo_header.png" class="intro-logo">
                 <h3 class="title mlW">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h3>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -69,7 +68,7 @@
                     accumsan et viverra justo commodo.</p>
                 <button class="btn-white">Download</button>
             </div>
-            <div class="form animated pulse">
+            <div class="form wow pulse">
                 <div class="form-header">
                     <p>Try Your <span>FREE</span> Trial Today</p>
                 </div>
@@ -92,7 +91,7 @@
     </div>
     <div class="header-slider slide2 mySlides">
         <div class="wrapper wrapper-header-slider">
-            <div class="header-intro animated bounceInLeft">
+            <div class="header-intro wow bounceInLeft">
                 <img src="assets/img/logo_header.png" class="intro-logo">
                 <h3 class="title mlW">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h3>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -100,7 +99,7 @@
                     accumsan et viverra justo commodo.</p>
                 <button class="btn-white">Download</button>
             </div>
-            <div class="form animated pulse">
+            <div class="form wow pulse">
                 <div class="form-header">
                     <p>Try Your <span>FREE</span> Trial Today</p>
                 </div>
@@ -123,7 +122,7 @@
     </div>
     <div class="header-slider slide3 mySlides">
         <div class="wrapper wrapper-header-slider ">
-            <div class="header-intro animated bounceInLeft">
+            <div class="header-intro wow bounceInLeft">
                 <img src="assets/img/logo_header.png" class="intro-logo">
                 <h3 class="title mlW">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h3>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -131,7 +130,7 @@
                     accumsan et viverra justo commodo.</p>
                 <button class="btn-white">Download</button>
             </div>
-            <div class="form animated pulse">
+            <div class="form wow pulse">
                 <div class="form-header">
                     <p>Try Your <span>FREE</span> Trial Today</p>
                 </div>
@@ -154,7 +153,7 @@
     </div>
     <div class="header-slider slide4 mySlides">
         <div class="wrapper wrapper-header-slider ">
-            <div class="header-intro animated bounceInLeft">
+            <div class="header-intro wow bounceInLeft">
                 <img src="assets/img/logo_header.png" class="intro-logo">
                 <h3 class="title mlW">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h3>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -162,7 +161,7 @@
                     accumsan et viverra justo commodo.</p>
                 <button class="btn-white">Download</button>
             </div>
-            <div class="form animated pulse">
+            <div class="form wow pulse">
                 <div class="form-header">
                     <p>Try Your <span>FREE</span> Trial Today</p>
                 </div>
@@ -186,12 +185,12 @@
 
     <div class="header-media">
         <div class="wrapper wrapper-header-media">
-            <div class="info">
-                <p class="title">Social Media</p>
+            <div class="info ">
+                <p class="title ">Social Media</p>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean euismod bibendum laoreet.</p>
             </div>
-            <ul class="media-social-header">
+            <ul class="media-social-header wowTitle fadeInRight">
                 <li>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </li>
@@ -227,8 +226,8 @@
             <div class="tab-menu-item" onclick="openTab(event,'tab3')"><p>TAB 3</p></div>
         </div>
 
-        <div id="tab1" class="tab-content animated bounceInLeft">
-            <p class="title">Tabs 1 with soft transitioning effect.</p>
+        <div id="tab1" class="tab-content">
+            <p class="title">Tabs 1111 with soft transitioning effect.</p>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
@@ -240,8 +239,8 @@
             <button class="btnDownload btn-orange">Download</button>
         </div>
 
-        <div id="tab2" class="tab-content animated bounceInLeft" style="display:none">
-            <p class="title">Tabs 2 with soft transitioning effect.</p>
+        <div id="tab2" class="tab-content " style="display:none">
+            <p class="title">Tabs 2222 with soft transitioning effect.</p>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
@@ -253,8 +252,8 @@
             <button class="btnDownload btn-orange">Download</button>
         </div>
 
-        <div id="tab3" class="tab-content animated bounceInLeft" style="display:none">
-            <p class="title">Tabs 3 with soft transitioning effect.</p>
+        <div id="tab3" class="tab-content " style="display:none">
+            <p class="title">Tabs 3333 with soft transitioning effect.</p>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
@@ -266,21 +265,21 @@
             <button class="btnDownload btn-orange">Download</button>
         </div>
 
-        <img src="assets/img/img_tab.png" class="animated bounceInDown" alt="">
+        <img src="assets/img/img_tab.png" class="wow flash" alt="">
     </div>
 </div>
 
 <div class="sub">
     <div class="wrapper wrapper-sub">
-        <img src="assets/img/img_sub.png">
-        <div class="sub-content">
+        <img src="assets/img/img_sub.png" class="wow fadeInLeft">
+        <div class="sub-content wow fadeInRight">
             <h3 class="title mlO">Sub list section</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                 accumsan et viverra justo commodo.</p>
             <div class="sub-list">
                 <div class="item">
-                    <img src="assets/img/icon-title-sub.png" class="item-icon">
+                    <img src="assets/img/icon-title.png" class="item-icon">
                     <div class="item-content">
                         <p class="item-title">Title</p>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -288,7 +287,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="assets/img/icon-title-sub.png" class="item-icon">
+                    <img src="assets/img/icon-title.png" class="item-icon">
                     <div class="item-content">
                         <p class="item-title">Title</p>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -301,9 +300,9 @@
     </div>
 </div>
 
-<div class="picture ">
+<div class="picture " id="section1">
     <div class="wrapper wrapper-picture">
-        <div class="picture-content">
+        <div class="picture-content  wow fadeInLeft">
             <h3 class="title mlO">Standard Picture Section</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
@@ -314,11 +313,11 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet.</p>
         </div>
-        <img src="assets/img/img_standard.png">
+        <img src="assets/img/img_standard.png" class=" wow fadeInRight">
     </div>
 </div>
 
-<div class="awesome ">
+<div class="awesome" id="section2">
     <div class="wrapper wrapper-awesome">
         <div class="awesome-intro intro">
             <h3 class="title centerO">WHY THIS IS AWESOME</h3>
@@ -326,7 +325,7 @@
         </div>
         <div class="awesome-list">
             <div class="awesome-item">
-                <div class="circle">
+                <div class="circle wow zoomInUp">
                     <img src="assets/img/icon-design.png"  alt="">
                 </div>
                 <p class="item-title">Thoughtful Design</p>
@@ -335,7 +334,7 @@
                     dolor sit amet lacus accumsan et viverra.</p>
             </div>
             <div class="awesome-item">
-                <div class="circle">
+                <div class="circle wow zoomInUp">
                     <img src="assets/img/icon-crafted.png"  alt="">
                 </div>
                 <p class="item-title">Well Crafted</p>
@@ -344,7 +343,7 @@
                     dolor sit amet lacus accumsan et viverra.</p>
             </div>
             <div class="awesome-item">
-                <div class="circle">
+                <div class="circle wow zoomInUp">
                     <img src="assets/img/icon-customize.png"  alt="">
                 </div>
                 <p class="item-title">Easy to Customize</p>
@@ -356,7 +355,7 @@
     </div>
 </div>
 
-<div class="pricing">
+<div class="pricing" id="section3">
     <div class="wrapper wrapper-pricing">
         <div class="pricing-intro intro">
             <h3 class="title centerO">PRICING OPTIONS</h3>
@@ -376,7 +375,7 @@
                     <div class="info ">
                     </div>
                 </div>
-                <div class="detail">
+                <div class="detail wow fadeInUp">
                     <p>1 gb of space</p>
                     <p>10 gb of bandwidth</p>
                     <p>3 websites</p>
@@ -398,7 +397,7 @@
                     <div class="info ">
                     </div>
                 </div>
-                <div class="detail">
+                <div class="detail wow fadeInUp">
                     <p>5 gb of space</p>
                     <p>50 gb of bandwidth</p>
                     <p>12 websites</p>
@@ -421,7 +420,7 @@
                         <p>OUR POPULAR</p>
                     </div>
                 </div>
-                <div class="detail">
+                <div class="detail wow fadeInUp">
                     <p>Unlimited space</p>
                     <p>unlimited bandwidth</p>
                     <p>100 websites</p>
@@ -434,7 +433,7 @@
     </div>
 </div>
 
-<div class="customer">
+<div class="customer" id="section4">
     <div class="wrapper wrapper-customer">
         <div class="customer-intro intro">
             <h3 class="title centerO">WHAT OUR CUSTOMERS ARE SAYING</h3>
@@ -442,7 +441,7 @@
         </div>
         <div class="customer-list">
             <div class="customer-item">
-                <div class="comment animated fadeInDown">
+                <div class="comment wow bounce">
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
                         accusamus expedita repellat similique
@@ -460,7 +459,7 @@
                 </div>
             </div>
             <div class="customer-item">
-                <div class="comment animated fadeInDown">
+                <div class="comment wow bounce">
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
                         accusamus expedita repellat similique
@@ -478,7 +477,7 @@
                 </div>
             </div>
             <div class="customer-item">
-                <div class="comment animated fadeInDown">
+                <div class="comment wow bounce">
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
                         accusamus expedita repellat similique
@@ -500,7 +499,7 @@
 </div>
 
 <div class="stylish1 stylish-slider mySlides1 ">
-    <div class="wrapper wrapper-stylish animated fadeInLeft">
+    <div class="wrapper wrapper-stylish wow fadeInLeft">
         <div class="stylish-intro">
             <h3 class="title centerW">STYLISH AXURE DESIGN</h3>
             <p class="text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
@@ -509,7 +508,7 @@
     </div>
 </div>
 <div class="stylish2 stylish-slider mySlides1 ">
-    <div class="wrapper wrapper-stylish animated fadeInLeft">
+    <div class="wrapper wrapper-stylish wow fadeInLeft">
         <div class="stylish-intro">
             <h3 class="title centerW">STYLISH AXURE DESIGN</h3>
             <p class="text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
@@ -518,7 +517,7 @@
     </div>
 </div>
 <div class="stylish3 stylish-slider mySlides1 ">
-    <div class="wrapper wrapper-stylish animated fadeInLeft">
+    <div class="wrapper wrapper-stylish wow fadeInLeft">
         <div class="stylish-intro">
             <h3 class="title centerW">STYLISH AXURE DESIGN</h3>
             <p class="text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
@@ -527,7 +526,7 @@
     </div>
 </div>
 
-<div class="contact" >
+<div class="contact" id="section5">
     <div class="wrapper wrapper-contact">
         <div class="contact-intro intro">
             <h3 class="title centerO">CONTACT US</h3>
@@ -687,11 +686,28 @@
   }
 </script>
 
-
 <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
 
+
+<script>
+  new WOW().init();
+</script>
+
+<script>
+  wow = new WOW(
+    {
+      boxClass:     'wowTitle',      // default
+      animateClass: 'animated', // default
+      offset:       100,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    }
+  )
+  wow.init();
+</script>
 </body>
 </html>
 
