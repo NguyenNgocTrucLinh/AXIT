@@ -4,10 +4,29 @@
     display: flex;
     justify-content: space-between;
     padding: 147px 0 115px;
+    @media #{$info-ipad-pro}{
+      display: block;
+      text-align: center;
+      padding: 50px 50px;
+    }
+    .tab-menu{
+      @media #{$info-ipad-pro}{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+    }
     .tab-menu-item{
       width: 110px;
       background-color:#333333 ;
       padding:50px 35px;
+      @media #{$info-ipad-pro}{
+        padding:30px 35px;
+      }
+      @media #{$info-ipad}{
+        padding:18px 21px;
+      }
       &:hover{
         cursor: pointer;
         background-color: #ff8b38;
@@ -16,6 +35,12 @@
         color: white;
         font-size: 14px;
         font-weight: bold;
+        @media #{$info-ipad-pro}{
+          font-size: 12px;
+        }
+        @media #{$info-ipad}{
+          font-size: 10px;
+        }
       }
     }
     .active{
@@ -24,21 +49,50 @@
     .tab-menu-item:nth-child(1){
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
+      @media #{$info-ipad-pro}{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+      }
     }
     .tab-menu-item:nth-child(2){
       border-bottom: 1px solid white;
       border-top: 1px solid white;
+      @media #{$info-ipad-pro}{
+        border-bottom:none;
+        border-top: none;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+      }
     }
     .tab-menu-item:nth-child(3) {
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
+      @media #{$info-ipad-pro}{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
     }
     .tab-content{
       margin: 10px 0 25px;
       width: 410px;
+      @media #{$info-ipad-pro}{
+        width:100%;
+      }
       .title{
         font-weight: bolder;
         font-size: 20px;
+      }
+      h3{
+        &::before{
+          position: absolute;
+          bottom: 0;
+          content: '';
+          height: 2px;
+          width: 65px;
+          background-color:#ff8b38;
+        }
       }
       .text{
         color: #c8c9ca;

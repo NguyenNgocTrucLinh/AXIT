@@ -1,6 +1,9 @@
 .wrapper-contact{
     background-color: white;
     padding:105px 0 80px ;
+    @media #{$info-ipad}{
+        padding:30px 0 30px ;
+    }
     .contact-intro{
         margin-bottom: 50px;
     }
@@ -9,9 +12,15 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 13px;
+        @media #{$info-ipad}{
+           display: block;
+        }
         .form-left {
             width: 47%;
             padding: 20px 0 0;
+            @media #{$info-ipad}{
+                width: 100%;
+            }
             .input-style{
                 input{
                     padding: 10px 12px;
@@ -33,6 +42,9 @@
         }
         .form-right{
             width: 47%;
+            @media #{$info-ipad}{
+                width: 100%;
+            }
             .input-message{
                 textarea{
                     min-height: 180px;
@@ -44,6 +56,9 @@
                     border-bottom: 1px solid #dcdcdc;
                     background: none;
                     outline: none;
+                    @media #{$info-ipad}{
+                        min-height: 50px;
+                    }
                     &:focus{
                         border-bottom: 1px solid #ff8b38;
                     }

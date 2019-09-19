@@ -23,6 +23,17 @@ img {
 .wrapper{
   width:1111px;
   margin: auto;
+  @media #{$info-laptop-small}{
+  width:900px;
+  margin: auto;
+}
+  @media #{$info-ipad-pro} {
+    width: 80%;
+    margin: auto;
+  }
+  @media #{$info-ipad} {
+    width: 80%;
+  }
 }
 .btn-white{
   background-color: transparent;
@@ -43,13 +54,13 @@ img {
   border: none;
   color: white;
   padding: 15px 25px;
+  border: 2px solid #ff8b38;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -ms-border-radius:5px;
   -o-border-radius: 5px;
   &:hover{
-    border: 2px solid #ff8b38;
     cursor: pointer;
     color:#ff8b38;
     background-color:white;
@@ -64,6 +75,9 @@ img {
     font-size: 25px;
     font-weight: normal;
     color: #212121;
+    @media #{$info-phone-6} {
+      font-size: 20px;
+    }
   }
   .line{
     margin: 30px 0;
@@ -73,4 +87,101 @@ img {
     color:#8f9094;
   }
 }
+h3{
+  &.centerO {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      width: 65px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color:#ff8b38;
+    }
+  }
+  &.centerW {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      width: 65px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color:white;
+    }
+  }
+  &.mlO {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      width: 65px;
+      left: 0;
+      background-color:#ff8b38;
+    }
+  }
+  &.mlW {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      width: 65px;
+      left: 0;
+      background-color:white;
+    }
+  }
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:rgba(255,139,56,0.9);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  @media #{$info-ipad-pro} {
+    padding: 5px;
+    right: 15px;
+    i{
+      margin: 0 3px;
+      font-size: 10px;
+     }
+  }
+  i{
+    margin: 0 3px;
+    font-size: 30px;
+  }
+}
+
+#myBtn:hover {
+  color: black;
+  font-weight: bold;
+  background-color: rgb(255,139,56);
+}
+
+
 

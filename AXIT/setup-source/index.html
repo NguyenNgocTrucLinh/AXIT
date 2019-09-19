@@ -11,19 +11,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en-us"/>
-    <title></title>
+    <title>AXIT</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     <!--  Chèn font google-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-<div class="header ">
 
+<div class="header ">
     <div class="header-navbar">
         <div class="wrapper wrapper-header-navbar">
             <img src="assets/img/logo.png" class="logo" alt="">
@@ -34,21 +35,134 @@
                 <li><a href="">Reviews</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+
+
+    <span class="open-slide" >
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="">Features</a>
+                <a href="">About</a>
+                <a href="">Pricing</a>
+                <a href="">Reviews</a>
+                <a href="">Contact</a>
+            </div>
+
+
         </div>
     </div>
 
-    <div class="header-slider">
+    <div class="header-slider slide1 mySlides">
         <div class="wrapper wrapper-header-slider">
-            <div class="header-intro">
+            <div class="header-intro animated bounceInLeft">
                 <img src="assets/img/logo_header.png" class="intro-logo">
-                <p class="title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</p>
-                <img src="assets/img/line_header.png" class="intro-line">
+                <h3 class="title mlW">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h3>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                     euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                     accumsan et viverra justo commodo.</p>
                 <button class="btn-white">Download</button>
             </div>
-            <div class="form">
+            <div class="form animated pulse">
+                <div class="form-header">
+                    <p>Try Your <span>FREE</span> Trial Today</p>
+                </div>
+                <div class="form-body">
+                    <div class="input-name input-style">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-email input-style">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-password input-style">
+                        <input type="text" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button>Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-slider slide2 mySlides">
+        <div class="wrapper wrapper-header-slider">
+            <div class="header-intro animated bounceInLeft">
+                <img src="assets/img/logo_header.png" class="intro-logo">
+                <h3 class="title mlW">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                    accumsan et viverra justo commodo.</p>
+                <button class="btn-white">Download</button>
+            </div>
+            <div class="form animated pulse">
+                <div class="form-header">
+                    <p>Try Your <span>FREE</span> Trial Today</p>
+                </div>
+                <div class="form-body">
+                    <div class="input-name input-style">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-email input-style">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-password input-style">
+                        <input type="text" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button>Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-slider slide3 mySlides">
+        <div class="wrapper wrapper-header-slider ">
+            <div class="header-intro animated bounceInLeft">
+                <img src="assets/img/logo_header.png" class="intro-logo">
+                <h3 class="title mlW">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                    accumsan et viverra justo commodo.</p>
+                <button class="btn-white">Download</button>
+            </div>
+            <div class="form animated pulse">
+                <div class="form-header">
+                    <p>Try Your <span>FREE</span> Trial Today</p>
+                </div>
+                <div class="form-body">
+                    <div class="input-name input-style">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-email input-style">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-password input-style">
+                        <input type="text" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button>Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-slider slide4 mySlides">
+        <div class="wrapper wrapper-header-slider ">
+            <div class="header-intro animated bounceInLeft">
+                <img src="assets/img/logo_header.png" class="intro-logo">
+                <h3 class="title mlW">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                    accumsan et viverra justo commodo.</p>
+                <button class="btn-white">Download</button>
+            </div>
+            <div class="form animated pulse">
                 <div class="form-header">
                     <p>Try Your <span>FREE</span> Trial Today</p>
                 </div>
@@ -71,48 +185,50 @@
     </div>
 
     <div class="header-media">
-       <div class="wrapper wrapper-header-media">
-           <div class="info">
-               <p class="title">Social Media</p>
-               <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                   Aenean euismod bibendum laoreet.</p>
-           </div>
-           <ul class="media-social-header">
-               <li>
-                   <a href="#"><i class="fab fa-facebook-f"></i></a>
-               </li>
-               <li>
-                   <a href="#"><i class="fab fa-twitter"></i></a>
-               </li>
-               <li>
-                   <a href="#"> <i class="fab fa-google-plus"></i> </a>
-               </li>
-               <li>
-                   <a href="#"><i class="fab fa-pinterest"></i></a>
-               </li>
-               <li>
-                   <a href="#"><i class="fab fa-instagram"></i></a>
-               </li>
-               <li>
-                   <a href="#"><i class="fab fa-stumbleupon"></i></a>
-               </li>
-               <li>
-                   <a href="#"><i class="fa fa-rss"></i></a>
-               </li>
-           </ul>
-       </div>
+        <div class="wrapper wrapper-header-media">
+            <div class="info">
+                <p class="title">Social Media</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.</p>
+            </div>
+            <ul class="media-social-header">
+                <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fab fa-google-plus"></i> </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-stumbleupon"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </div>
 
 <div class="tab">
     <div class="wrapper wrapper-tab">
         <div class="tab-menu">
-            <div class="tab-menu-item active"><p>TAB 1</p></div>
-            <div class="tab-menu-item"><p>TAB 2</p></div>
-            <div class="tab-menu-item"><p>TAB 3</p></div>
+            <div class="tab-menu-item active" onclick="openTab(event,'tab1')"><p>TAB 1</p></div>
+            <div class="tab-menu-item" onclick="openTab(event,'tab2')"><p>TAB 2</p></div>
+            <div class="tab-menu-item" onclick="openTab(event,'tab3')"><p>TAB 3</p></div>
         </div>
-        <div class="tab-content">
-            <p class="title">Tabs with soft transitioning effect.</p>
+
+        <div id="tab1" class="tab-content animated bounceInLeft">
+            <p class="title">Tabs 1 with soft transitioning effect.</p>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
@@ -123,7 +239,34 @@
                 bibendum laoreet.</p>
             <button class="btnDownload btn-orange">Download</button>
         </div>
-        <img src="assets/img/img_tab.png" alt="">
+
+        <div id="tab2" class="tab-content animated bounceInLeft" style="display:none">
+            <p class="title">Tabs 2 with soft transitioning effect.</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+                <br/>
+                <br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet.</p>
+            <button class="btnDownload btn-orange">Download</button>
+        </div>
+
+        <div id="tab3" class="tab-content animated bounceInLeft" style="display:none">
+            <p class="title">Tabs 3 with soft transitioning effect.</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+                <br/>
+                <br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet.</p>
+            <button class="btnDownload btn-orange">Download</button>
+        </div>
+
+        <img src="assets/img/img_tab.png" class="animated bounceInDown" alt="">
     </div>
 </div>
 
@@ -131,14 +274,13 @@
     <div class="wrapper wrapper-sub">
         <img src="assets/img/img_sub.png">
         <div class="sub-content">
-            <p class="title">Sub list section</p>
-            <img src="assets/img/line_sub.png" class="line" alt="">
+            <h3 class="title mlO">Sub list section</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                 accumsan et viverra justo commodo.</p>
             <div class="sub-list">
                 <div class="item">
-                    <img src="assets/img/icon_title.png" class="item-icon">
+                    <img src="assets/img/icon-title-sub.png" class="item-icon">
                     <div class="item-content">
                         <p class="item-title">Title</p>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -146,7 +288,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="assets/img/icon_title.png" class="item-icon">
+                    <img src="assets/img/icon-title-sub.png" class="item-icon">
                     <div class="item-content">
                         <p class="item-title">Title</p>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -162,8 +304,7 @@
 <div class="picture ">
     <div class="wrapper wrapper-picture">
         <div class="picture-content">
-            <p class="title">Standard Picture Section</p>
-            <img src="assets/img/line_standard.png" class="line" alt="">
+            <h3 class="title mlO">Standard Picture Section</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
                 et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
@@ -177,33 +318,40 @@
     </div>
 </div>
 
-<div class="awesome wrapper-awesome">
-    <div class="awesome-intro intro">
-        <p class="title">WHY THIS IS AWESOME</p>
-        <img class="line" src="assets/img/line_standard.png">
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-    </div>
-    <div class="awesome-list">
-        <div class="awesome-item">
-            <img src="assets/img/icon_design.png" class="item-icon" alt="">
-            <p class="item-title">Thoughtful Design</p>
-            <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Aenean euismod bibendum laoreet. Proin gravida
-                dolor sit amet lacus accumsan et viverra.</p>
+<div class="awesome ">
+    <div class="wrapper wrapper-awesome">
+        <div class="awesome-intro intro">
+            <h3 class="title centerO">WHY THIS IS AWESOME</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
-        <div class="awesome-item">
-            <img src="assets/img/icon_crafted.png" class="item-icon" alt="">
-            <p class="item-title">Well Crafted</p>
-            <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Aenean euismod bibendum laoreet. Proin gravida
-                dolor sit amet lacus accumsan et viverra.</p>
-        </div>
-        <div class="awesome-item">
-            <img src="assets/img/icon_customize.png" class="item-icon" alt="">
-            <p class="item-title">Easy to Customize</p>
-            <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Aenean euismod bibendum laoreet. Proin gravida
-                dolor sit amet lacus accumsan et viverra.</p>
+        <div class="awesome-list">
+            <div class="awesome-item">
+                <div class="circle">
+                    <img src="assets/img/icon-design.png"  alt="">
+                </div>
+                <p class="item-title">Thoughtful Design</p>
+                <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aenean euismod bibendum laoreet. Proin gravida
+                    dolor sit amet lacus accumsan et viverra.</p>
+            </div>
+            <div class="awesome-item">
+                <div class="circle">
+                    <img src="assets/img/icon-crafted.png"  alt="">
+                </div>
+                <p class="item-title">Well Crafted</p>
+                <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aenean euismod bibendum laoreet. Proin gravida
+                    dolor sit amet lacus accumsan et viverra.</p>
+            </div>
+            <div class="awesome-item">
+                <div class="circle">
+                    <img src="assets/img/icon-customize.png"  alt="">
+                </div>
+                <p class="item-title">Easy to Customize</p>
+                <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aenean euismod bibendum laoreet. Proin gravida
+                    dolor sit amet lacus accumsan et viverra.</p>
+            </div>
         </div>
     </div>
 </div>
@@ -211,8 +359,7 @@
 <div class="pricing">
     <div class="wrapper wrapper-pricing">
         <div class="pricing-intro intro">
-            <p class="title">PRICING OPTIONS</p>
-            <img class="line" src="assets/img/line_standard.png">
+            <h3 class="title centerO">PRICING OPTIONS</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
         <div class="pricing-list">
@@ -222,6 +369,9 @@
                     <div class="content">
                         <span class="type">$</span> <span class="number">0</span>
                         <p>Free for Life</p>
+                    </div>
+                    <div class="info-active">
+                        <p>OUR POPULAR</p>
                     </div>
                     <div class="info ">
                     </div>
@@ -242,8 +392,10 @@
                         <span class="type">$</span> <span class="number">19</span>
                         <p>Monthly Payment</p>
                     </div>
-                    <div class="info-active">
+                    <div class="info-main">
                         <p>OUR MOST POPULAR</p>
+                    </div>
+                    <div class="info ">
                     </div>
                 </div>
                 <div class="detail">
@@ -265,6 +417,9 @@
                     <div class="info">
 
                     </div>
+                    <div class="info-active">
+                        <p>OUR POPULAR</p>
+                    </div>
                 </div>
                 <div class="detail">
                     <p>Unlimited space</p>
@@ -282,20 +437,18 @@
 <div class="customer">
     <div class="wrapper wrapper-customer">
         <div class="customer-intro intro">
-            <p class="title">WHAT OUR CUSTOMERS ARE SAYING</p>
-            <img class="line" src="assets/img/line_standard.png">
+            <h3 class="title centerO">WHAT OUR CUSTOMERS ARE SAYING</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="customer-list">
             <div class="customer-item">
-                <div class="comment">
+                <div class="comment animated fadeInDown">
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
                         accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque
                         quo suscipit.</p>
                 </div>
-              <div class="arrow"></div>
                 <div class="account">
                     <div class="avatar">
                         <img src="assets/img/ava_custormer.png" alt="">
@@ -307,14 +460,13 @@
                 </div>
             </div>
             <div class="customer-item">
-                <div class="comment">
+                <div class="comment animated fadeInDown">
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
                         accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque
                         quo suscipit.</p>
                 </div>
-              <div class="arrow"></div>
                 <div class="account">
                     <div class="avatar">
                         <img src="assets/img/ava_custormer.png" alt="">
@@ -326,14 +478,13 @@
                 </div>
             </div>
             <div class="customer-item">
-                <div class="comment">
+                <div class="comment animated fadeInDown">
                     <p>Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
                         accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque
                         quo suscipit.</p>
                 </div>
-                <div class="arrow"></div>
                 <div class="account">
                     <div class="avatar">
                         <img src="assets/img/ava_custormer.png" alt="">
@@ -348,22 +499,38 @@
     </div>
 </div>
 
-<div class="stylish">
-    <div class="wrapper wrapper-stylish">
+<div class="stylish1 stylish-slider mySlides1 ">
+    <div class="wrapper wrapper-stylish animated fadeInLeft">
         <div class="stylish-intro">
-            <p class="title">STYLISH AXURE DESIGN</p>
-            <img class="line" src="assets/img/line_stylish.png">
+            <h3 class="title centerW">STYLISH AXURE DESIGN</h3>
+            <p class="text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+        </div>
+        <button class="btn-white">Download</button>
+    </div>
+</div>
+<div class="stylish2 stylish-slider mySlides1 ">
+    <div class="wrapper wrapper-stylish animated fadeInLeft">
+        <div class="stylish-intro">
+            <h3 class="title centerW">STYLISH AXURE DESIGN</h3>
+            <p class="text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+        </div>
+        <button class="btn-white">Download</button>
+    </div>
+</div>
+<div class="stylish3 stylish-slider mySlides1 ">
+    <div class="wrapper wrapper-stylish animated fadeInLeft">
+        <div class="stylish-intro">
+            <h3 class="title centerW">STYLISH AXURE DESIGN</h3>
             <p class="text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
         </div>
         <button class="btn-white">Download</button>
     </div>
 </div>
 
-<div class="contact">
+<div class="contact" >
     <div class="wrapper wrapper-contact">
         <div class="contact-intro intro">
-            <p class="title">CONTACT US</p>
-            <img class="line" src="assets/img/line_sub.png">
+            <h3 class="title centerO">CONTACT US</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="form">
@@ -384,7 +551,7 @@
                 </div>
             </div>
         </div>
-        <button class="btnSend btn-orange">Send Message</button>
+        <button class="btnSend btn-orange animated bounceIn">Send Message</button>
     </div>
 </div>
 
@@ -416,11 +583,110 @@
         <p>© 2015 Axure Themes</p>
     </div>
 </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+
 
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+
+
+<!--open tab-->
+<script>
+  function openTab(evt,tabName) {
+    var i;
+    x = document.getElementsByClassName("tab-content");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    y=document.getElementsByClassName("tab-menu-item");
+    for (i = 0; i < x.length; i++) {
+      y[i].className = y[i].className.replace("active","");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+<!--showSlides-->
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+</script>
+<script>
+  var slideIndex1 = 0;
+  showSlides1();
+
+  function showSlides1() {
+    var i;
+    var slides1 = document.getElementsByClassName("mySlides1");
+    for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
+    }
+    slideIndex1++;
+    if (slideIndex1 > slides1.length) {slideIndex1 = 1}
+    slides1[slideIndex1-1].style.display = "block";
+
+    setTimeout(showSlides1, 2500); // Change image every 2 seconds
+  }
+</script>
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!--menu-->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+
+<!--menu-->
+<script>
+  function openSlideMenu(){
+    document.getElementById('side-menu').style.width = '100%';
+  }
+
+  function closeSlideMenu(){
+    document.getElementById('side-menu').style.width = '0';
+  }
+</script>
+
 
 <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
